@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="common/classes"/>
+	<classpathentry excluding="classes/" kind="src" path="tt/build"/>
+	<classpathentry kind="src" path="tt/static"/>
+	<classpathentry kind="src" path="tt/i18n"/>
+	<classpathentry kind="src" path="loader/classes"/>
+	<classpathentry kind="src" path="server/classes"/>
+	<classpathentry kind="src" path="servlet/classes"/>
+	<classpathentry kind="src" path="tools/classes"/>
+	<classpathentry kind="src" path="truetype/classes"/>
+	<classpathentry kind="src" path="tt/classes"/>
+	<classpathentry kind="lib" path="common/lib/java/ant-contrib-1.0b3.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/commons-collections-3.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/commons-dbcp-1.2.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/commons-pool-1.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/getdown-retro-pro.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/getdown.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/javasvn-cli.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/javasvn.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/jinput.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/jorbis.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/jsquish.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/lwjgl_util_applet.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/mysql.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/png.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/samskivert.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="common/lib/java/servlet-api.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="tools/svn/ganymed.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="tools/svn/svnkit-cli.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="tools/svn/svnkit.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/openjdk8"/>
+	<classpathentry kind="lib" path="/usr/local/share/java/classes/lwjgl/lwjgl.jar"/>
+	<classpathentry kind="lib" path="/usr/local/share/java/classes/lwjgl/lwjgl_util.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
