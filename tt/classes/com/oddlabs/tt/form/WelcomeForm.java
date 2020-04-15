@@ -28,7 +28,7 @@ public final strictfp class WelcomeForm extends Form {
 		
 		update_button = new HorizButton(Utils.getBundleString(bundle, "update_now"), 100);
 		addChild(update_button);
-		update_button.addMouseClickListener(new UpdateListener());
+//		update_button.addMouseClickListener(new UpdateListener());
 		
 		HorizButton register_button = new HorizButton(Utils.getBundleString(bundle, "register"), 100);
 		addChild(register_button);
@@ -56,9 +56,9 @@ public final strictfp class WelcomeForm extends Form {
 		}
 	}
 
-	private final strictfp class UpdateListener implements MouseClickListener {
-		public final void mouseClicked(int button, int x, int y, int clicks) {
-			main_menu.setMenuCentered(new UpdateGameForm(gui_root, main_menu));
-		}
-	}
+//	private final strictfp class UpdateListener implements MouseClickListener {
+//		public final void mouseClicked(int button, int x, int y, int clicks) {
+//			main_menu.setMenuCentered(new UpdateGameForm(gui_root, main_menu));
+//		}
+//	}
 }

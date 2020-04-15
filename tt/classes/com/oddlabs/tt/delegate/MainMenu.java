@@ -88,7 +88,7 @@ public final strictfp class MainMenu extends Menu {
 		if (LocalInput.getUpdateInfo() != null && !Settings.getSettings().hide_update) {
 			MenuButton update_game = new MenuButton(Utils.getBundleString(bundle, "update"), COLOR_NORMAL, COLOR_ACTIVE);
 			addChild(update_game);
-			update_game.addMouseClickListener(new UpdateGameListener());
+//			update_game.addMouseClickListener(new UpdateGameListener());
 		}
 	}
 
@@ -127,11 +127,11 @@ public final strictfp class MainMenu extends Menu {
 		}
 	}
 
-	private final strictfp class UpdateGameListener implements MouseClickListener {
-		public final void mouseClicked(int button, int x, int y, int clicks) {
-			setMenuCentered(new UpdateGameForm(getGUIRoot(), MainMenu.this));
-		}
-	}
+//	private final strictfp class UpdateGameListener implements MouseClickListener {
+//		public final void mouseClicked(int button, int x, int y, int clicks) {
+//			setMenuCentered(new UpdateGameForm(getGUIRoot(), MainMenu.this));
+//		}
+//	}
 
 	private final strictfp class TutorialListener implements MouseClickListener {
 		public final void mouseClicked(int button, int x, int y, int clicks) {

@@ -31,7 +31,7 @@ public final strictfp class Utils {
 	}
  
 	public final static File getInstallDir() {
-		return new File(System.getProperty("user.dir"));
+		return new File(System.getProperty("user.dir")+ "/tt/build");
 	}
 
 	public final static FloatBuffer toBuffer(float[] floats) {

@@ -1,30 +1,24 @@
 package com.oddlabs.truetype;
 
-import java.io.InputStream;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.nio.ByteBuffer;
-import java.nio.IntBuffer;
-import java.awt.image.BufferedImage;
 import java.awt.Graphics2D;
-//import java.awt.Shape;
 import java.awt.RenderingHints;
-import java.awt.Font;
-import java.awt.font.TextLayout;
 import java.awt.font.FontRenderContext;
 import java.awt.font.LineBreakMeasurer;
-import java.awt.image.DataBuffer;
-import java.text.AttributedString;
-import java.text.AttributedCharacterIterator;
 import java.awt.font.TextAttribute;
+import java.awt.font.TextLayout;
+import java.awt.image.BufferedImage;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.IntBuffer;
+import java.text.AttributedCharacterIterator;
+import java.text.AttributedString;
 
-import org.lwjgl.Sys;
+import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
-import org.lwjgl.opengl.glu.GLU;
-import org.lwjgl.BufferUtils;
+import org.lwjgl.util.glu.GLU;
 
 import com.oddlabs.util.Utils;
 
@@ -67,7 +61,7 @@ public final strictfp class Test {
 			pixel_data.put(pixels);													// OLD
 			pixel_data.rewind();
 
-			int texture_handle = createTexture(WIDTH, HEIGHT, pixel_data);
+//			int texture_handle = createTexture(WIDTH, HEIGHT, pixel_data);
 			
 		FontRenderContext frc = g2d.getFontRenderContext();
 		AttributedString att_str = new AttributedString(str);
@@ -160,16 +154,16 @@ System.out.println("total_time = " + total_time);
 		GL11.glTexSubImage2D(GL11.GL_TEXTURE_2D, 0, 0, 0, width, height, GL11.GL_RGBA, GL12.GL_UNSIGNED_INT_8_8_8_8, pixel_data);
 	}
 
-	private final static int createTexture(int width, int height, IntBuffer pixel_data) {
-		IntBuffer handle_buffer = BufferUtils.createIntBuffer(1);
-		GL11.glGenTextures(handle_buffer);
-		int tex_handle = handle_buffer.get(0);
-
-		GL11.glBindTexture(GL11.GL_TEXTURE_2D, tex_handle);
-		GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_NEAREST);
-		GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_NEAREST);
-		GL11.glTexImage2D(GL11.GL_TEXTURE_2D, 0, GL11.GL_RGBA, width, height, 0, GL11.GL_RGBA, GL12.GL_UNSIGNED_INT_8_8_8_8, pixel_data);
-
-		return tex_handle;
-	}
+//	private final static int createTexture(int width, int height, IntBuffer pixel_data) {
+//		IntBuffer handle_buffer = BufferUtils.createIntBuffer(1);
+//		GL11.glGenTextures(handle_buffer);
+//		int tex_handle = handle_buffer.get(0);
+//
+//		GL11.glBindTexture(GL11.GL_TEXTURE_2D, tex_handle);
+//		GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_NEAREST);
+//		GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_NEAREST);
+//		GL11.glTexImage2D(GL11.GL_TEXTURE_2D, 0, GL11.GL_RGBA, width, height, 0, GL11.GL_RGBA, GL12.GL_UNSIGNED_INT_8_8_8_8, pixel_data);
+//
+//		return tex_handle;
+//	}
 }
